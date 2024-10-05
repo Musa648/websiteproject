@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Bars</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+
+
+        /* Container for the skill bars */
+        .skills-container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Each skill */
+        .skill {
+            margin-bottom: 20px; /* Adds space between each skill */
+        }
+
+        /* Skill name label */
+        .skill-name {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        /* Progress bar background */
+        .progress {
+            width: 100%;
+            background-color: #e0e0e0; /* Light background color */
+            border-radius: 5px;
+            overflow: hidden;
+            border: 2px solid black;
+            position: relative;
+            height: 30px; /* Height of the progress bar */
+        }
+
+        /* Fill of the progress bar */
+        .fill {
+            height: 100%; /* Fill the height of the progress container */
+            background-color: green; /* Adjust colors for each skill if needed */
+            border-radius: 5px 0 0 5px; /* Rounded left side */
+        }
+    </style>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html" style="color:#f44336;">HOME</a></li>
+                <li><a href="about.html" style="color:#f44336;">ABOUT</a></li>
+             <li><a href="contact.html" style="color:#f44336;">CONTACT</a></li>
+             <li><a href="form.html" style="color:#f44336;">FORM</a></li>
+            
+        </ul>
+    </nav>
+</header>
+
+
+
+
+</head>
+<body>
+
+    <p style="color: #f44336">HERE'S MY KNOWLEDGE OF PROGRAMMING LANGUAGES SO FAR</p>
+
+    <div class="skills-container">
+        <div class="skill">
+            <span class="skill-name">C++</span>
+            <div class="progress">
+                <div class="fill" style="width: 50%;"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <span class="skill-name">Python</span>
+            <div class="progress">
+                <div class="fill" style="width: 30%;"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <span class="skill-name">Assembly</span>
+            <div class="progress">
+                <div class="fill" style="width: 1%;"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <span class="skill-name">HTML</span>
+            <div class="progress">
+                <div class="fill" style="width: 75%;"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

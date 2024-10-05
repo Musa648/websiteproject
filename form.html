@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image:url(1784.jpg) ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .form-container {
+            background-color:transparent;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            margin-top: 10px;
+            color: #555;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        input[type="submit"], input[type="reset"] {
+            width: 48%;
+            padding: 10px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #5cb85c;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="reset"] {
+            background-color: #d9534f;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #4cae4c;
+        }
+
+        input[type="reset"]:hover {
+            background-color: #c9302c;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+
+
+
+<style>
+    /* CSS to style the navigation */
+    .navbar {
+        list-style-type: none; /* Remove bullet points */
+        padding: 0;           /* Remove padding */
+        margin: 0;            /* Remove margin */
+        display: flex;        /* Use flexbox for horizontal layout */
+        position: absolute;    /* Position the navbar in the top left corner */
+        top: 0;
+        left: 0;
+    }
+
+    .navbar li {
+        margin-right: 20px;   /* Space between items */
+    }
+
+    .navbar a {
+        color: #f44336;       /* Link color */
+        text-decoration: none; /* Remove underline from links */
+    }
+
+    .navbar a:hover {
+        text-decoration: underline; /* Underline on hover */
+    }
+</style>
+
+
+   
+   
+
+
+</head>
+
+<body>
+
+    <header></header>
+    <nav>
+        <ul>
+            <li><a href="index.html" style="color:#f44336;">HOME</a></li>
+                <li><a href="about.html" style="color:#f44336;">ABOUT</a></li>
+             <li><a href="contact.html" style="color:#f44336;">CONTACT</a></li>
+             <li><a href="form.html" style="color:#f44336;">FORM</a></li>
+            
+        </ul>
+    </nav>
+</header>
+
+
+
+
+    <div class="form-container">
+        <h2>CV Submission Form</h2>
+        <form method="post">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="Enter your name" minlength="4" maxlength="8" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter your password" minlength="4" maxlength="8" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="you@example.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone #:</label>
+                <input type="tel" id="phone" placeholder="+27 12 456 3066">
+            </div>
+
+            <div class="form-group">
+                <label for="bday">Birthdate:</label>
+                <input type="date" id="bday">
+            </div>
+
+            <div class="form-group">
+                <label for="institution">Educational Institution:</label>
+                <input type="text" id="institution" name="institution" required>
+            </div>
+
+            <div class="form-group">
+                <label for="degree">Degree:</label>
+                <input type="text" id="degree" name="degree" required>
+            </div>
+
+            <div class="form-group">
+                <label for="experience">Work Experience:</label>
+                <input type="text" id="experience" name="experience" placeholder="Describe your previous roles or internships">
+            </div>
+
+            <div class="form-group">
+                <label for="jobrole">Preferred Job Role:</label>
+                <input type="text" id="jobrole" name="jobrole" placeholder="E.g., Software Engineer, Data Scientist">
+            </div>
+
+            <div class="button-group">
+                <input type="reset">
+                <input type="submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
